@@ -1,0 +1,85 @@
+.range-slider {
+
+  padding-top: 9px;
+
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    background-color: $white;
+    border: 1px solid rgba(24, 24, 24, 0.4);
+    border-radius: 0;
+    padding: 11px 10px;
+    width: 105px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__text {
+    margin-right: 8px;
+    opacity: 0.33;
+  }
+
+  &__stroke {
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1;
+
+    &:focus {
+      outline: 1px solid transparent;
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    -moz-appearance: textfield;
+  }
+
+  & .noUi-target {
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 0;
+
+  }
+
+  & .noUi-horizontal {
+    height: 1px;
+
+    & .noUi-handle {
+      width: 18px;
+      height: 18px;
+      background-color: $white;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+      border: 1px solid $accent;
+      top: -8px;
+      right: -18px;
+      border-radius: 0;
+
+      &::after,
+      &::before {
+        display: none;
+      }
+
+      &.noUi-handle-upper {
+        right: 0;
+      }
+    }
+  }
+
+  & .noUi-connect {
+    background-color: $accent;
+  }
+}
